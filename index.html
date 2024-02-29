@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Piedra, PAel, Tijera</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <h1>Juego Pieda, Papel y Tijera</h1>
+    <div class="contenedor">
+        <div>
+            <button type="button" onclick="jugar('piedra')">
+                <img src="IMG/piedra.png" >
+            </button>
+    
+            <button type="button" onclick="jugar('tijera')">
+                <img src="IMG/Tijera.png"  >
+            </button>
+    
+            <button type="button" onclick="jugar('papel')">
+                <img src="IMG/papel.png" >
+            </button>
+        </div>
+        <div>
+            <label id="lblResultado"></label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <h1>Adivina el Número</h1>
+    <div>
+        <div class="contenedor">
+            <h3>Digita un número entre 1 y 100:</h3>
+            <input type="number" id="txtNumero" onkeyup="if(event.keyCode==13) adivinar()">
+            <div>
+                <button id="btnCalcular" onclick="adivinar()">Adivinar número</button>
+            </div>
+            <div>
+                <label id="lblResCal"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
